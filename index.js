@@ -1,20 +1,73 @@
-//funções
-function f3 (){
+// //funções
+// function f(funcao){
+//    return funcao() //g
+// }
+// function g(){
+//     function outraFuncao(){
+//         console.log ("Fui definida por g")
+//         return () => {2}
+//     }
+//     return outraFuncao()
+// }
 
-}
-console.log(f3())
+// f(g)()
 
-const hello = () => console.log("Hello")
-hello()
+// let umaFuncao = function (){
+//     console.log ("Fui armazenada em uma variável")
+// }
+// umaFuncao()
 
-const dobro = valor => valor * 2
+// const resultadoDaG = g()
+// resultadoDaG()
+// g()()()
 
-let triplo = (valor) => {
-    return valor * 3
-}
+// f(function(){
+//     console.log("Estou sendo passada para f...")
+// })
 
-const ehPar = n => {n % 2 === 0}
-console.log(ehPar(10))
+// function produzUmaFuncao(a, b, operador){
+//     if (operador === '+')
+//     return function(a, b){
+//         a + b
+//     }
+//     if (operador === '-'){
+//     return (a, b) => a - b
+//     }
+// }
+
+
+// function executa(f) {
+//     f()
+// }
+// executa(function(a, b) {return a +b})
+
+
+// public class Teste {
+//     public void m() {
+
+//     }
+//     public void testando() {
+//         var meuMetodo = m;
+//     }
+// }
+
+
+// function f3 (){
+
+// }
+// console.log(f3())
+
+// const hello = () => console.log("Hello")
+// hello()
+
+// const dobro = valor => valor * 2
+
+// let triplo = (valor) => {
+//     return valor * 3
+// }
+
+// const ehPar = n => {n % 2 === 0}
+// console.log(ehPar(10))
 
 // const f = () => {}
 // const umArgumento n => {
