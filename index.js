@@ -1,21 +1,43 @@
 // //funções
-function eAgora (){
-    let cont = 1
-    function f1(){
-        console.log(cont)
-        cont++
-    }
-    cont++
-    function f2(){
-        console.log(cont)
-    }
-    return{f1, f2}
-}
 
-let eAgoraResult = eAgora()
-eAgoraResult.f1()
-eAgoraResult.f2()
-eAgoraResult.f1()
+///www.exemplo.com.br/livros
+///GET
+///função que acessa a base e devolve os livros
+
+const app = express ()
+
+app.get()
+
+// function f(){}
+
+// () => {}
+
+// a => {return a * 2}
+
+// let f = a => a * 2
+
+// function f (a){
+//     return a * 2
+// }
+
+
+// function eAgora (){
+//     let cont = 1
+//     function f1(){
+//         console.log(cont)
+//         cont++
+//     }
+//     cont++
+//     function f2(){
+//         console.log(cont)
+//     }
+//     return{f1, f2}
+// }
+
+// let eAgoraResult = eAgora()
+// eAgoraResult.f1()
+// eAgoraResult.f2()
+// eAgoraResult.f1()
 
 
 // function saudadesFactory (saudacao, nome){
