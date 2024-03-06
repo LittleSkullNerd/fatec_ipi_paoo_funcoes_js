@@ -1,31 +1,139 @@
-// //funções
+const fs = require('fs')
+const abrirArquivo = (nomeArquivo) => {
+    const exibirConteudo = (erro, conteudo) => {
+        if(erro){
+            console.log('Erro: ${erro}')
+        }
+        else{
+            console.log(conteudo.toString())
+            const resultado = +conteudo.toString() * 10
+            const finalizar = (erro) => {
+                if (!erro){
+                    console.log('Conteudo escrito com sucesso')
+                }
+                else{
+                    console.log('Escrita falhou')
+                }
+            }
+            fs.writeFile('resultado.txt', resultado.toString(), finalizar)
+        }
+    }
+    fs.readFile(nomeArquivo, exibirConteudo)
+}
+abrirArquivo('arquivo.txt')
+
+
+// const f1 = () => console.log('f1')
+// const f2 = () => console.log('f2')
+
+// setTimeout(f1, 500)
+// setTimeout(f2, 500)
+// console.log('fim do script principal')
+
+
+
+// function demorada (){
+//     //pegar o horário atual do sistema, e descolar ele de 2 segundos no futuro
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while(new Date().getTime() <= atualMais2Segundos); //NO-OP: No operation
+//     const d = 8 + 4
+//     return d
+// }
+
+// const a = 2 + 5
+// const b = 5 + 9
+// setTimeout(function(){
+//     const d = demorada()
+//     console.log('d: ' + d)
+// }, 500)
+
+// const e = 2 + a + b
+// console.log('e: ' + e)
+
+
+
+
+
+
+
+
+// function demorada (){
+//     //pegar o horário atual do sistema, e descolar ele de 2 segundos no futuro
+//     const atualMais2Segundos = new Date().getTime() + 2000
+//     while(new Date().getTime() <= atualMais2Segundos); //NO-OP: No operation
+//     const d = 8 + 4
+//     return d
+// }
+
+// const a = 2 + 5
+// const b = 5 + 9
+// const d = demorada()
+
+// const e = 2 + a + b
+// console.log(e)
+
+
+// const a = 2 + 7
+// const b = 5
+// console.log(a + b)
+
+
+// console.log('Eu primeiro')
+// console.log('Agora eu')
+// console.log('Sempre vou ser a última....:c')
+
+//uma calculadora faz soma e subtração
+//cada operação envolve dois operados
+//soma deve utilizar arrow function, sem return
+//subtracao deve ser funcao regular
+// let calculadora = {
+//     soma: (a, b) => a + b,
+//     subtracao: function(a, b){
+//         return a  +  b
+//     }
+// }
+
+
+// console.log(calculadora.soma(2, 3))
+
+
+
+
 //uma concessionária tem CNPJ e endereço. Ela possui alguns carros em estoque. Cada um deles tem
 //marca, modelo e ano de fabricação
-let concessionaria = {
-    cnpj: '5812351253123',
-    endereco: {
-        logradouro: 'Rua J',
-        numero: 50,
-        bairro: 'Vila Estrela'
-    },
-    carros: [
-        {
-            marca: 'Ford',
-            modelo: 'Fiesta',
-            anoFabricacao: 2015
+//acessar a marca do segundo veiculo
 
-        },
+// let concessionaria = {
+//     cnpj: '5812351253123',
+//     endereco: {
+//         logradouro: 'Rua J',
+//         numero: 50,
+//         bairro: 'Vila Estrela'
+//     },
+//     carros: [
+//         {
+//             marca: 'Ford',
+//             modelo: 'Fiesta',
+//             anoFabricacao: 2015
 
-        {
-            marca: 'VW',
-            modelo: 'Fusca',
-            anoFabricacao: 1975
+//         },
 
-        },
+//         {
+//             marca: 'VW',
+//             modelo: 'Fusca',
+//             anoFabricacao: 1975
 
-    ]
-}
+//         },
 
+//     ]
+// }
+// for (let carro of concessionaria.carros){
+//     console.log('Marca: ${carro.marca}. Modelo: ${carro.modelo}')
+// }
+
+
+// console.log(concessionaria.carros.[1].marca)
+// console.log(concessionaria['carros'][0]['marca'])
 
 
 
