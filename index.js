@@ -1,12 +1,98 @@
 // //funções
+//uma concessionária tem CNPJ e endereço. Ela possui alguns carros em estoque. Cada um deles tem
+//marca, modelo e ano de fabricação
+let concessionaria = {
+    cnpj: '5812351253123',
+    endereco: {
+        logradouro: 'Rua J',
+        numero: 50,
+        bairro: 'Vila Estrela'
+    },
+    carros: [
+        {
+            marca: 'Ford',
+            modelo: 'Fiesta',
+            anoFabricacao: 2015
+
+        },
+
+        {
+            marca: 'VW',
+            modelo: 'Fusca',
+            anoFabricacao: 1975
+
+        },
+
+    ]
+}
+
+
+
+
+// let pessoa = {
+//     CNPJ: 1234567,
+
+//     endereco: {
+//         logradouro: 'Rua A',
+//         numero: 20
+//     },
+
+//     carros: {
+//         marca: 'rovilson',
+//         modelo: 'rovilson2.0',
+//         anoF: 2010
+//     }
+
+// }
+
+
+//se chama Maria, tem 21 anos e mora na rua B, 14
+//objetos aninhados
+// let pessoa = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco: {
+//     logradouro: 'Rua B',
+//     numero: '14'
+//     }
+// }
+// console.log(pessoa['endereco']['logradouro'])
+// console.log(pessoa.endereco.numero)
+// console.log(pessoa['endereco'].numero)
+// console.log(pessoa.endereco['logradouro'])
+// console.log(pessoa.nome)
+// console.log(pessoa.idade)
+
+//Resposta 1:
+// let pessoa = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco: 'rua B, 14' 
+// }
+
+
+
+
+//Uma pessoa chamada João que tem 17 anos de idade
+//JSON; JavaScript Object Notation
+// let pessoa = {
+//     nome: 'João',
+//     idade: 17
+// }
+// //. e[] para acessar membros
+// console.log(pessoa.nome)
+// console.log(pessoa['idade'])
+
 
 ///www.exemplo.com.br/livros
 ///GET
 ///função que acessa a base e devolve os livros
 
-const app = express ()
+// const app = express ()
 
-app.get()
+// app.get('/livros', () => {
+    
+// })
 
 // function f(){}
 
